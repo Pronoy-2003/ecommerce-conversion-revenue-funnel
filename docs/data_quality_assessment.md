@@ -1,0 +1,183 @@
+# Day 1 — Data Quality Assessment
+
+## 1. Dataset Overview
+
+- **Dataset:** eCommerce Behavior Data from Multi-Category Store
+- **Analysis Period:** October 2019
+- **File:** `2019-Oct.csv`
+- **Total Events:** 42,448,764
+- **Number of Columns:** 9
+
+The dataset contains user interactions with products on an e-commerce platform. The primary events available for this project are:
+
+`view → cart → purchase`
+
+---
+
+## 2. Dataset Scale
+
+| Metric | Result |
+|---|---:|
+| Total events | 42,448,764 |
+| Unique users | 3,022,290 |
+| Unique sessions | 9,244,421 |
+| Unique products | 166,794 |
+| Unique categories | 624 |
+| Start date | 2019-10-01 00:00:00 UTC |
+| End date | 2019-10-31 23:59:59 UTC |
+
+---
+
+## 3. Event Distribution
+
+| Event Type | Event Count |
+|---|---:|
+| View | 40,779,399 |
+| Cart | 926,516 |
+| Purchase | 742,849 |
+| Remove from cart | 0 |
+
+The dataset contains three observed event types:
+
+**View → Cart → Purchase**
+
+Event counts represent recorded events and not unique users.
+
+Therefore, raw event counts will **not** be used directly to calculate funnel conversion rates. User-level funnel logic will be developed during Day 2.
+
+---
+
+## 4. Missing Values
+
+| Column | Missing Count | Missing % |
+|---|---:|---:|
+| category_code | 13,515,609 | 31.84% |
+| brand | 6,117,080 | 14.41% |
+| user_session | 2 | 0.000005% |
+| event_time | 0 | 0% |
+| event_type | 0 | 0% |
+| product_id | 0 | 0% |
+| category_id | 0 | 0% |
+| price | 0 | 0% |
+| user_id | 0 | 0% |
+
+### Assessment
+
+`category_code` and `brand` contain a significant number of missing values.
+
+However, these columns are descriptive product attributes rather than core identifiers required for the primary funnel analysis.
+
+Rows will **not** be deleted solely because `category_code` or `brand` is missing.
+
+The appropriate treatment of these values will be finalized during Day 2 cleaning and transformation.
+
+---
+
+## 5. Zero-Price Records
+
+- **Zero-price records:** 68,673
+- **Percentage of dataset:** 0.1618%
+
+### Zero-Price Records by Event Type
+
+| Event Type | Zero-Price Records |
+|---|---:|
+| View | 68,523 |
+| Cart | 150 |
+| Purchase | 0 |
+
+Zero-price records represent a very small proportion of the dataset.
+
+Importantly, there are **no zero-price purchase events**.
+
+These records will not be automatically deleted at this stage. They will be investigated further during Day 2 before performing price-based analysis.
+
+---
+
+## 6. Duplicate Records
+
+An initial duplicate check identified:
+
+**30,219 exact duplicate rows within individual 500,000-row chunks.**
+
+This is not considered the final duplicate count because the initial chunk-level check cannot identify duplicates that occur across chunk boundaries.
+
+A more robust duplicate validation will therefore be performed during Day 2 cleaning.
+
+---
+
+## 7. Price Range
+
+| Metric | Value |
+|---|---:|
+| Minimum price | 0.00 |
+| Maximum price | 2,574.07 |
+
+The complete price distribution will be analyzed during Day 2 before creating price bands.
+
+---
+
+## 8. Data Quality Strengths
+
+The dataset has several important strengths:
+
+- `event_time` contains no missing values.
+- `event_type` contains no missing values.
+- `product_id` contains no missing values.
+- `category_id` contains no missing values.
+- `price` contains no missing values.
+- `user_id` contains no missing values.
+- The dataset covers the complete October 2019 period.
+- All three required funnel events are available.
+- The dataset contains sufficient user, session, product, category, price, and time information for the planned analysis.
+
+---
+
+## 9. Data Quality Issues Identified
+
+The Day 1 investigation identified the following issues:
+
+1. `category_code` has 31.84% missing values.
+2. `brand` has 14.41% missing values.
+3. Two records have missing `user_session`.
+4. At least 30,219 duplicate rows were detected within chunks.
+5. 68,673 records have a price of zero.
+6. The dataset contains 42.45 million events and therefore requires chunk-based processing.
+
+---
+
+## 10. Analytical Decisions
+
+Based on the Day 1 investigation:
+
+### Decision 1 — Funnel calculation
+
+Funnel conversion rates will be calculated using **unique users**, rather than raw event counts.
+
+### Decision 2 — Missing categorical values
+
+Rows will not be removed simply because `brand` or `category_code` is missing.
+
+### Decision 3 — Zero-price records
+
+Zero-price records will be investigated before deciding how they should be treated in price and revenue analysis.
+
+### Decision 4 — Duplicate records
+
+Duplicate handling will be finalized after a stronger validation during Day 2.
+
+### Decision 5 — Large dataset processing
+
+The dataset will be processed using chunk-based techniques rather than loading the complete CSV into memory at once.
+
+---
+
+## 11. Day 1 Conclusion
+
+The October 2019 dataset contains **42.45 million e-commerce events** generated by approximately **3.02 million unique users** across **9.24 million sessions**.
+
+The core fields required for funnel analysis are highly complete. The primary data quality challenges are missing descriptive attributes, potential duplicate records, zero-price records, and the large size of the dataset.
+
+The dataset is suitable for the planned **E-commerce Conversion & Revenue Funnel Analytics** project.
+
+Day 2 will focus on data cleaning, validation, transformation, and construction of the user-level funnel dataset.
