@@ -6,38 +6,7 @@ This document explains the Python source-code architecture used in the project, 
 
 ## 1. Source Code Architecture
 
-```text
-Raw CSV
-   │
-   ▼
-data_loader.py
-   │
-   ▼
-process_raw_data.py
-   │
-   ▼
-clean_events.csv
-   │
-   ├───────────────────────┐
-   ▼                       ▼
-funnel_analysis.py     eda_analysis.py
-   │                       │
-   ▼                       ├── Category Analysis
-user_funnel.csv            ├── Brand Analysis
-   │                       └── Price Band Analysis
-   │
-   ▼
-time_analysis.py
-   │
-   ▼
-time_analysis.csv
-   │
-   ▼
-Validation Scripts
-   │
-   ▼
-Power BI / Business Analysis
-```
+![Project Architecture](project_architecture.png)
 
 The modules are separated by responsibility so that loading, cleaning, processing, analysis, and validation remain distinct.
 
