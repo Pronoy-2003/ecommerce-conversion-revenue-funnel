@@ -1,0 +1,75 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ================================
+# Jupyter
+# ================================
+.ipynb_checkpoints/
+
+# ================================
+# Environment / secrets
+# ================================
+.env
+.env.*
+!.env.example
+
+# ================================
+# IDE / OS
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ================================
+# Python / testing / coverage
+# ================================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# ================================
+# Large datasets
+# ================================
+# Raw Kaggle dataset
+data/raw/2019-Oct.csv
+
+# Large generated processed datasets
+data/processed/clean_events.csv
+data/processed/user_funnel.csv
+
+# ================================
+# Local Power BI files
+# ================================
+# Keep the PBIX out of normal Git history.
+# Publish it as a GitHub Release asset or use Git LFS.
+*.pbix
+*.pbit
+
+# ================================
+# Temporary / generated files
+# ================================
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+
+# Local exports
+exports/
+output/

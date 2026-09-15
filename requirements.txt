@@ -1,0 +1,11 @@
+# Core data processing
+pandas
+numpy
+
+# Data analysis and visualization
+matplotlib
+seaborn
+
+# Notebook / development environment
+jupyter
+ipykernel
