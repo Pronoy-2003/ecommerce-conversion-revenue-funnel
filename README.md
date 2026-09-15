@@ -295,43 +295,7 @@ A disk-backed SQLite index tracks event fingerprints across chunks.
 
 # 🏗️ Project Architecture
 
-```text
-                    Raw Dataset
-                         │
-                         ▼
-                 data_loader.py
-                         │
-                         ▼
-              process_raw_data.py
-                         │
-                         ├── data_cleaning.py
-                         │
-                         ▼
-                 clean_events.csv
-                         │
-             ┌───────────┴───────────┐
-             ▼                       ▼
-     funnel_analysis.py        eda_analysis.py
-             │                       │
-             ▼                       ├── Category
-       user_funnel.csv              ├── Brand
-             │                       └── Price Band
-             │
-             ▼
-      time_analysis.py
-             │
-             ▼
-       time_analysis.csv
-             │
-             ▼
-      Validation Scripts
-             │
-             ▼
-      Power BI Dashboard
-             │
-             ▼
-     Business Insights
-```
+![Project Architecture](docs/project_architecture.png)
 
 See [`docs/code_documentation.md`](docs/code_documentation.md) for detailed source-code responsibilities.
 
@@ -609,11 +573,11 @@ The 6.50% threshold represents the overall View → Purchase benchmark.
 
 ### Executive Funnel Overview
 
-![Executive Funnel Overview](screenshots/dashboard_overview.png)
+![Executive Funnel Overview](screenshots/01_executive_funnel_overview.png)
 
 ### Segment & Opportunity Analysis
 
-![Segment & Opportunity Analysis](screenshots/dashboard_opportunity_analysis.png)
+![Segment & Opportunity Analysis](screenshots/02_segment_&_opportunity_analysis.png)
 
 Power BI file:
 
