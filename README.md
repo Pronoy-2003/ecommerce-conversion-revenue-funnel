@@ -838,7 +838,7 @@ Actionable Recommendations
 
 ---
 
-# Future Work
+# 🔮 Future Work
 
 - **Customer Segmentation:** Group customers based on their purchasing behavior, activity, and revenue contribution.
 - **Cart Abandonment Analysis:** Investigate users who add products to their carts but do not complete a purchase.
