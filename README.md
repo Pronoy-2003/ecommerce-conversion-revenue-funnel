@@ -848,15 +848,8 @@ Actionable Recommendations
 
 ---
   
-# 👤 Author
 
-**Pronoy Pryunkush Sonowal**
-
-Data Analyst Portfolio Project
-
----
-
-## 📄 License
+# 📄 License
 
 This repository contains original project code, documentation, analytical outputs, and dashboard work created for portfolio purposes.
 
