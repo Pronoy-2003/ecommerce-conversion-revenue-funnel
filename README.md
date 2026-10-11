@@ -838,6 +838,16 @@ Actionable Recommendations
 
 ---
 
+# Future Work
+
+- **Customer Segmentation:** Group customers based on their purchasing behavior, activity, and revenue contribution.
+- **Cart Abandonment Analysis:** Investigate users who add products to their carts but do not complete a purchase.
+- **Product-Level Analysis:** Identify individual products with high traffic, strong conversion, or low sales performance.
+- **Customer Retention Analysis:** Analyze repeat purchases and customer retention to understand long-term customer behavior.
+- **Automated Data Pipeline:** Automate data ingestion, cleaning, validation, and dashboard refreshes to make the analysis more efficient.
+
+---
+  
 # 👤 Author
 
 **Pronoy Pryunkush Sonowal**
