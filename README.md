@@ -125,8 +125,7 @@ The Power BI dashboard contains two pages.
 
 ![Executive Funnel Overview](screenshots/01_executive_funnel_overview.png)
 
-![Segment & Opportunity
-Analysis](screenshots/02_segment_opportunity_analysis.png)
+![Segment & Opportunity Analysis](screenshots/02_segment_&_opportunity_analysis.png)
 
 **Power BI file:** `powerbi/ecommerce_funnel_dashboard.pbix`
 
@@ -217,9 +216,9 @@ behavior.
 **Pronoy Pryunkush Sonowal**\
 Data Analyst Portfolio Project
 
--   **GitHub:** \https://github.com/Pronoy-2003
--   **LinkedIn:** \www.linkedin.com/in/pronoy-pryunkush-sonowal
--   **Email:** \pronoypryunkushsonowal2002@gmail.com
+-   **GitHub:** https://github.com/Pronoy-2003
+-   **LinkedIn:** www.linkedin.com/in/pronoy-pryunkush-sonowal
+-   **Email:** pronoypryunkushsonowal2002@gmail.com
 
 ------------------------------------------------------------------------
 
