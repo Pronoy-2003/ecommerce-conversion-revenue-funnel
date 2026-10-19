@@ -123,10 +123,10 @@ The Power BI dashboard contains two pages.
 
 **Dashboard previews:**
 
-![Executive Funnel Overview](screenshots/dashboard_overview.png)
+![Executive Funnel Overview](screenshots/01_executive_funnel_overview.png)
 
 ![Segment & Opportunity
-Analysis](screenshots/dashboard_opportunity_analysis.png)
+Analysis](screenshots/02_segment_opportunity_analysis.png)
 
 **Power BI file:** `powerbi/ecommerce_funnel_dashboard.pbix`
 
@@ -217,9 +217,9 @@ behavior.
 **Pronoy Pryunkush Sonowal**\
 Data Analyst Portfolio Project
 
--   **GitHub:** \[Add your GitHub profile or repository URL\]
--   **LinkedIn:** \[Add your LinkedIn profile URL\]
--   **Email:** \[Add your professional email address\]
+-   **GitHub:** \https://github.com/Pronoy-2003
+-   **LinkedIn:** \www.linkedin.com/in/pronoy-pryunkush-sonowal
+-   **Email:** \pronoypryunkushsonowal2002@gmail.com
 
 ------------------------------------------------------------------------
 
