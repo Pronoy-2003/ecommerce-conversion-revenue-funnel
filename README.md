@@ -124,7 +124,7 @@ Kaggle.
 funnel; purchase-event counts and revenue also include other purchase
 events.*
 
-## Dashboard / Model / Output
+## Dashboard
 
 The Power BI dashboard contains two pages.
 
@@ -146,10 +146,9 @@ The Power BI dashboard contains two pages.
 
 **Dashboard previews:**
 
-![Executive Funnel Overview](screenshots/dashboard_overview.png)
+![Executive Funnel Overview](screenshots/01_executive_funnel_overview.png)
 
-![Segment & Opportunity
-Analysis](screenshots/dashboard_opportunity_analysis.png)
+![Segment & Opportunity Analysis](screenshots/02_segment_&_opportunity_analysis.png)
 
 **Power BI file:** `powerbi/ecommerce_funnel_dashboard.pbix`
 
@@ -240,55 +239,55 @@ behavior.
 ```text
 ecommerce-conversion-revenue-funnel/
 │
-├── data/                                           # Dataset notes and processed analytical outputs
-│   ├── raw/                                        # Raw dataset is downloaded locally, not committed
-│   │   ├── raw_data_README.md                      # Raw dataset download instructions
-│   │   └── .gitkeep                                # Keeps the folder in Git
+├── data/                                           
+│   ├── raw/                                        
+│   │   ├── raw_data_README.md                      
+│   │   └── .gitkeep                                
 │   └── processed/
-│       ├── eda/                                    # Aggregated analysis outputs
-│       │   ├── brand_analysis.csv                  # Brand-level funnel and revenue metrics
-│       │   ├── category_analysis.csv               # Category-level funnel and revenue metrics
-│       │   ├── overall_funnel.csv                  # Overall funnel metrics
-│       │   ├── price_band_analysis.csv             # Price-band funnel and revenue metrics
-│       │   └── time_analysis.csv                   # Time-based funnel and purchase metrics
-│       └── processed_data_README.md                # Notes about processed data
+│       ├── eda/                                    
+│       │   ├── brand_analysis.csv                  
+│       │   ├── category_analysis.csv               
+│       │   ├── overall_funnel.csv                  
+│       │   ├── price_band_analysis.csv             
+│       │   └── time_analysis.csv                  
+│       └── processed_data_README.md               
 │
-├── docs/                                           # Project documentation and analysis
-│   ├── business_insights.md                        # Findings and recommendations
-│   ├── code_documentation.md                       # Explanation of implementation
-│   ├── data_dictionary.md                          # Dataset fields and definitions
-│   ├── methodology.md                              # Processing and analysis methodology
-│   └── project_architecture.png                    # Project architecture diagram
+├── docs/                                          
+│   ├── business_insights.md                        
+│   ├── code_documentation.md                       
+│   ├── data_dictionary.md                          
+│   ├── methodology.md                              
+│   └── project_architecture.png                    
 │
-├── notebooks/                                      # Data exploration and analysis notebooks
-│   ├── 01_data_understanding.ipynb                 # Initial data profiling
-│   ├── 02_data_cleaning.ipynb                      # Cleaning exploration
-│   ├── 03_funnel_construction.ipynb                # Funnel construction exploration
-│   └── 04_funnel_eda.ipynb                         # Funnel exploratory analysis
+├── notebooks/                                      
+│   ├── 01_data_understanding.ipynb                 
+│   ├── 02_data_cleaning.ipynb                     
+│   ├── 03_funnel_construction.ipynb                
+│   └── 04_funnel_eda.ipynb                        
 │
-├── powerbi/                                        # Power BI documentation and report location
-│   └── README_PowerBI.md                           # Power BI report notes
+├── powerbi/                                        
+│   └── README_PowerBI.md                          
 │
-├── screenshots/                                    # Dashboard preview images
-│   ├── 01_executive_funnel_overview.png            # Executive funnel overview
-│   └── 02_segment_&_opportunity_analysis.png       # Segment and opportunity analysis
+├── screenshots/                                    
+│   ├── 01_executive_funnel_overview.png            
+│   └── 02_segment_&_opportunity_analysis.png      
 │
-├── src/                                            # Python processing and analysis scripts
-│   ├── __init__.py                                 # Python package marker
-│   ├── data_cleaning.py                            # Data type, missing-value, and datetime handling
-│   ├── data_loader.py                              # Chunk-based raw data loading
-│   ├── eda_analysis.py                             # Category, brand, and price-band analysis
-│   ├── funnel_analysis.py                          # User-level chronological funnel
-│   ├── process_raw_data.py                         # Cleaning and duplicate-removal pipeline
-│   ├── time_analysis.py                            # Hourly and weekday analysis
-│   ├── validate_brand_analysis.py                  # Brand output validation
-│   ├── validate_price_analysis.py                  # Price-band output validation
-│   └── validate_time_analysis.py                   # Time output validation
+├── src/                                            
+│   ├── __init__.py                                
+│   ├── data_cleaning.py                            
+│   ├── data_loader.py                             
+│   ├── eda_analysis.py                             
+│   ├── funnel_analysis.py                          
+│   ├── process_raw_data.py                         
+│   ├── time_analysis.py                           
+│   ├── validate_brand_analysis.py                  
+│   ├── validate_price_analysis.py                  
+│   └── validate_time_analysis.py                   
 │
-├── .gitignore                                      # Files and folders excluded from Git
-├── LICENSE                                         # MIT license
-├── README.md                                       # Project overview and instructions
-└── requirements.txt                                # Python dependencies
+├── .gitignore                                     
+├── LICENSE                                        
+├── README.md                                       
+└── requirements.txt                                
 ```
 
 ## Author & Contact
@@ -296,9 +295,9 @@ ecommerce-conversion-revenue-funnel/
 **Pronoy Pryunkush Sonowal**\
 Data Analyst Portfolio Project
 
--   **GitHub:** \[Add your GitHub profile or repository URL\]
--   **LinkedIn:** \[Add your LinkedIn profile URL\]
--   **Email:** \[Add your professional email address\]
+-   **GitHub:** https://github.com/Pronoy-2003
+-   **LinkedIn:** www.linkedin.com/in/pronoy-pryunkush-sonowal
+-   **Email:** pronoypryunkushsonowal2002@gmail.com
 
 ------------------------------------------------------------------------
 
