@@ -12,7 +12,7 @@ opportunities using Python, SQLite, and Power BI.**
 - [Tools and Technologies](#tools-and-technologies)
 - [Methods](#methods)
 - [Key Insights](#key-insights)
-- [Dashboard / Model / Output](#dashboard--model--output)
+- [Dashboard](#dashboard--model--output)
   - [Executive Funnel Overview](#1-executive-funnel-overview)
   - [Segment & Opportunity Analysis](#2-segment--opportunity-analysis)
 - [How to Run This Project?](#how-to-run-this-project)
